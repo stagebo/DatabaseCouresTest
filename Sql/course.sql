@@ -23,6 +23,6 @@ CREATE TABLE `course` (
   `cno` varchar(32) NOT NULL,
   `cname` varchar(64) DEFAULT NULL,
   `cpno` varchar(64) DEFAULT NULL,
-  `ccredit` varchar(64) DEFAULT NULL,
+  `ccredit` varchar(64) DEFAULT NULL, 
   PRIMARY KEY (`cno`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
