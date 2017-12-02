@@ -1,0 +1,27 @@
+use coursetest;
+CREATE TABLE `image` (
+  `filename` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+;
+CREATE TABLE `course` (
+  `cno` varchar(32) NOT NULL,
+  `cname` varchar(64) DEFAULT NULL,
+  `cpno` varchar(64) DEFAULT NULL,
+  `ccredit` varchar(64) DEFAULT NULL,
+  PRIMARY KEY (`cno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `sc` (
+  `sno` varchar(64) DEFAULT NULL,
+  `cno` varchar(64) DEFAULT NULL,
+  `grade` double DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `student` (
+  `sno` varchar(32) NOT NULL,
+  `sname` varchar(64) DEFAULT NULL,
+  `ssex` int(11) DEFAULT NULL,
+  `sage` int(11) DEFAULT NULL,
+  `sdept` varchar(64) DEFAULT NULL,
+  PRIMARY KEY (`sno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
